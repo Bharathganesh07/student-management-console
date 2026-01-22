@@ -1,50 +1,25 @@
-\# Student Management Console Application (Java + MySQL)
+# Student Management Console Application (Java + MySQL)
 
+A Java console-based CRUD application for managing student records using MySQL database and JDBC.
 
+## Features
+- Add Student
+- View All Students
+- Search Student by ID
+- Update Student
+- Delete Student
 
-A console-based student management system built using Java and MySQL.
+## Tech Stack
+- Java
+- JDBC
+- MySQL
+- IntelliJ IDEA
 
+## Database Structure
 
-
-\## Features
-
-\- Add student
-
-\- View students
-
-\- Search student
-
-\- Update student
-
-\- Delete student
-
-
-
-\## Technologies Used
-
-\- Java (JDBC)
-
-\- MySQL
-
-\- IntelliJ IDEA
-
-
-
-\## How to Run
-
-1\. Create database `studentdb`
-
-2\. Create `students` table
-
-3\. Update DB credentials in code
-
-4\. Run Main.java
-
-
-
-\## Author
-
-Bharath Ganesh
-
-
-
+```sql
+CREATE TABLE students (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(50),
+  age INT
+);

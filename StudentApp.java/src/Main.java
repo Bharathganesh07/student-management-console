@@ -5,8 +5,9 @@ public class Main {
 
     static final String URL =
             "jdbc:mysql://localhost:3306/studentdb?useSSL=false&serverTimezone=UTC";
-    static final String USER = "root";
-    static final String PASS = "Bharath1234@";   // change later
+    static final String USER = System.getenv("DB_USER");
+    static final String PASS = System.getenv("DB_PASS");
+    // change later
 
     static Scanner sc = new Scanner(System.in);
 
